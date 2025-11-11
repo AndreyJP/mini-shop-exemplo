@@ -5,6 +5,9 @@ on:
     branches:
       - main  # ou o branch que você usa como principal
 
+permissions:
+  contents: write  # 👈 garante que o deploy possa escrever no branch gh-pages
+
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
